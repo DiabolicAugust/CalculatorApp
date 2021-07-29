@@ -1,10 +1,37 @@
 import React from "react";
 import { StyleSheet } from "react-native";
+import { getStatusBarHeight } from 'react-native-status-bar-height';
 
 export const styles = StyleSheet.create({
+  overStatusBar: { flex: 1, backgroundColor: "#1e1e1e" },
+  underStatusBar: {
+    flex: 1,
+    marginTop: getStatusBarHeight(),
+    justifyContent: 'flex-start',
+    padding: 20
+  },
+  underStatusBarText: {
+    color: 'white',
+    fontFamily: 'StyleScript',
+    fontSize: 45,
+    textAlign: 'center'
+  },
   mainColor: {
     flex: 1,
     backgroundColor: "#1e1e1e",
+  },
+  calculatorButton: {
+    backgroundColor: '#ffd464',
+    borderRadius: 20,
+    width: 120,
+    height: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 20,
+    marginTop: 40
+  },
+  calculatorButtonText: {
+    fontSize: 20
   },
   window: {
     width: "100%",
@@ -17,8 +44,17 @@ export const styles = StyleSheet.create({
   },
   Resulting: {
     fontSize: 45,
-    marginRight: 150,
+    marginRight: 10,
     textAlign: "right",
+    color: 'black',
+    marginBottom: 15
+  },
+  result: {
+    fontSize: 65,
+    marginRight: 10,
+    textAlign: "right",
+    marginBottom: 5,
+    color: 'grey'
   },
   Sections: {
     flexDirection: "row",
