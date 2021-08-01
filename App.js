@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, useEffect } from 'react-native';
 import { useFonts } from 'expo-font'
 import StackNav from './navigation/navigate'
 // import * as Font from 'expo-font';
@@ -12,6 +11,8 @@ import AppLoading from 'expo-app-loading'
 
 
 export default function App() {
+
+
 
   let [fontsLoaded] = useFonts({
     'StyleScript': require('./assets/fonts/StyleScript.ttf'),

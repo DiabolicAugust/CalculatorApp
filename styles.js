@@ -1,37 +1,145 @@
 import React from "react";
 import { StyleSheet } from "react-native";
-import { getStatusBarHeight } from 'react-native-status-bar-height';
+import { getStatusBarHeight } from "react-native-status-bar-height";
 
 export const styles = StyleSheet.create({
+  currencyTextInputView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  CurrencyLabelText: {
+    fontSize: 27,
+    fontFamily: "StyleScript",
+    color: "white",
+  },
+  currencyTextInput: {
+    borderColor: "#0b0b0b",
+    borderRadius: 25,
+    borderWidth: 2,
+    backgroundColor: "#0b0b0b",
+    width: 200,
+    height: 50,
+    color: "white",
+    marginTop: 5,
+    paddingLeft: 10,
+  },
+
+  buttonsMainScreenSectionOne: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+  },
+  currencyScreen: {
+    backgroundColor: "#1e1e1e",
+    height: "100%",
+    width: "100%",
+  },
+  currencyMore: {
+    backgroundColor: "#ffd464",
+    width: 95,
+    height: 70,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: getStatusBarHeight() + 10,
+    marginLeft: 29,
+    borderRadius: 20,
+  },
+  currencyMoreText: {
+    fontFamily: "StyleScript",
+    fontSize: 27,
+  },
   overStatusBar: { flex: 1, backgroundColor: "#1e1e1e" },
   underStatusBar: {
     flex: 1,
     marginTop: getStatusBarHeight(),
-    justifyContent: 'flex-start',
-    padding: 20
+    justifyContent: "flex-start",
+    padding: 20,
   },
   underStatusBarText: {
-    color: 'white',
-    fontFamily: 'StyleScript',
+    color: "chocolate",
+    fontFamily: "StyleScript",
     fontSize: 45,
-    textAlign: 'center'
+    textAlign: "center",
+  },
+  centeredView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 22,
+  },
+  modalView: {
+    margin: 20,
+    backgroundColor: "white",
+    borderRadius: 20,
+    padding: 35,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+  modalText: {
+    marginBottom: 5,
+    alignItems: "center",
+  },
+  modalTextInput: {
+    width: "100%",
+    borderWidth: 2,
+    borderRadius: 25,
+    borderColor: "#A6DC8C",
+  },
+  openButton: {
+    backgroundColor: "#F194FF",
+    borderRadius: 20,
+    padding: 10,
+    elevation: 2,
+    backgroundColor: "#A6DC8C",
+    height: 40,
+    width: 90,
+    justifyContent: "center",
+    textAlign: "center",
+  },
+  hideButton: {
+    backgroundColor: "#F194FF",
+    borderRadius: 20,
+    marginHorizontal: 25,
+    padding: 10,
+    elevation: 2,
+    backgroundColor: "#A6DC8C",
+    height: 40,
+    width: 90,
+    justifyContent: "space-between",
+    marginTop: 20,
+  },
+  textStyle: {
+    color: "black",
+    fontWeight: "bold",
+    textAlign: "center",
   },
   mainColor: {
     flex: 1,
     backgroundColor: "#1e1e1e",
   },
-  calculatorButton: {
-    backgroundColor: '#ffd464',
+  ButtonsMainScreen: {
+    backgroundColor: "#ffd464",
     borderRadius: 20,
     width: 120,
     height: 100,
-    justifyContent: 'center',
-    alignItems: 'center',
-    margin: 20,
-    marginTop: 40
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 20,
   },
   calculatorButtonText: {
-    fontSize: 20
+    fontSize: 27,
+    fontFamily: "StyleScript",
+  },
+  currencyConvertButtonText: {
+    fontSize: 27,
+    fontFamily: "StyleScript",
   },
   window: {
     width: "100%",
@@ -46,15 +154,15 @@ export const styles = StyleSheet.create({
     fontSize: 45,
     marginRight: 10,
     textAlign: "right",
-    color: 'black',
-    marginBottom: 15
+    color: "black",
+    marginBottom: 15,
   },
   result: {
     fontSize: 65,
     marginRight: 10,
     textAlign: "right",
     marginBottom: 5,
-    color: 'grey'
+    color: "grey",
   },
   Sections: {
     flexDirection: "row",
@@ -71,8 +179,8 @@ export const styles = StyleSheet.create({
     borderRadius: 20,
   },
   buttonMoreText: {
-    fontWeight: "bold",
-    fontSize: 20,
+    fontFamily: "StyleScript",
+    fontSize: 27,
   },
   buttonX: {
     backgroundColor: "#A6DC8C",

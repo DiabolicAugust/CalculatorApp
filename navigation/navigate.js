@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import Main from '../screens/Main'
 import Calculator from '../screens/Calculatior';
 import { Animated } from 'react-native'
+import CurrencyConvert from '../screens/CurrencyConvert'
 import { TransitionSpecs, HeaderStyleInterpolators, } from '@react-navigation/stack';
 // import CardStackStyleInterpolator from 'react-navigation/src/views/CardStack/CardStackStyleInterpolator';
 
@@ -37,6 +38,11 @@ const StackNav = () => {
             <Stack.Screen
                 name='Calculator'
                 component={Calculator}
+                options={{ headerShown: false }}
+            />
+            <Stack.Screen
+                name='CurrencyConvert'
+                component={CurrencyConvert}
                 options={{ headerShown: false }}
             />
         </Stack.Navigator>
